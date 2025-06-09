@@ -1,4 +1,4 @@
-# Contributing to Java Dev Kit
+# Contributing to Version Catalogue
 
 We appreciate your interest in contributing to our Java Enterprise Utility Library. Contributions are welcome in various
 forms such as code, documentation, bug reports, and test cases. To ensure a smooth collaboration, please follow the
@@ -56,4 +56,4 @@ We encourage using JUnit Jupiter for unit and integration tests. Pull Requests w
 
 ## License
 
-By contributing to the Java Dev Kit, you agree that your contributions will be licensed under the Apache 2.0 license. If you do not agree to this, please refrain from contributing.
+By contributing to the Java Dev Kit, you agree that your contributions will be licensed under the MIT license. If you do not agree to this, please refrain from contributing.
