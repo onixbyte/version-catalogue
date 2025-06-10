@@ -44,19 +44,20 @@ repositories {
 
 dependencies {
     constraints {
-
+        api(libs.devkit.mapUtil)
+        api(libs.devkit.propertyGuard)
     }
 }
 
 publishing {
     publications {
-        create<MavenPublication>("devkitBom") {
+        create<MavenPublication>("versionCatalogue") {
             groupId = group.toString()
-            artifactId = "devkit-bom"
+            artifactId = "version-catalogue"
             version = artefactVersion
 
             pom {
-                name = "DevKit BOM"
+                name = "OnixByte :: Version Catalogue"
                 description = "Using BOM could use unified OnixByte JDevKit."
                 url = projectUrl
 
@@ -68,8 +69,8 @@ publishing {
                 }
 
                 scm {
-                    connection = "scm:git:git://github.com:OnixByte/devkit-bom.git"
-                    developerConnection = "scm:git:git://github.com:OnixByte/devkit-bom.git"
+                    connection = "scm:git:git://github.com:onixbyte/version-catalogue.git"
+                    developerConnection = "scm:git:git://github.com:onixbyte/version-catalogue.git"
                     url = projectGithubUrl
                 }
 
@@ -95,7 +96,7 @@ publishing {
             from(components["javaPlatform"])
 
             signing {
-                sign(publishing.publications["devkitBom"])
+                sign(publishing.publications["versionCatalogue"])
             }
         }
 
